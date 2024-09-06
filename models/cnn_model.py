@@ -63,7 +63,7 @@ class cnn_model:
         )
         hist = self.cnn_model1.fit(datagen.flow(x_train, y_train, batch_size=44),epochs=10,validation_data=(x_test, y_test))
         print("The model has successfully trained")
-        self.cnn_model1.save('mnist.keras')
+        self.cnn_model1.save('models/mnist.keras')
         self.check_results(x_test,y_test)
 
     def predict_image(self, image,model):
@@ -75,9 +75,9 @@ class cnn_model:
 
         image = image.astype('float32')/ 255.00
         image = image.reshape(1, 28, 28, 1)
-        plt.imshow(image[0, :, :, 0], cmap='gray')
-        plt.title("Processed Image")
-        plt.show()
+        #plt.imshow(image[0, :, :, 0], cmap='gray')
+        #plt.title("Processed Image")
+        #plt.show()
         result =model.predict(image)
 
 

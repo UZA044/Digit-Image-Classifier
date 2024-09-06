@@ -53,8 +53,8 @@ class tk_window:
     def draw(self, event):
         if self.last_x and self.last_y:
             x, y = event.x, event.y
-            self.canvas.create_line(self.last_x, self.last_y, x, y, fill="white", width=7)
-            self.draw.line([self.last_x, self.last_y, x, y], fill="white", width=7)
+            self.canvas.create_line(self.last_x, self.last_y, x, y, fill="white", width=8)
+            self.draw.line([self.last_x, self.last_y, x, y], fill="white", width=8)
             self.last_x, self.last_y = x, y
 
     def stop_drawing(self, event):
@@ -75,7 +75,6 @@ class tk_window:
         fileTypes = [("Image files", "*.png;*.jpg;*.jpeg")]
         path = filedialog.askopenfilename(filetypes=fileTypes)
 
-        # if file is selected
         if len(path):
             img = Image.open(path)
             img = img.resize((280, 280))
