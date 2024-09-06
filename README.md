@@ -17,5 +17,5 @@ The **Image Digit Classifier** is a machine learning project that deploy CNNs ( 
 - **Matplotlib**: For visualizing processed images.
 
 ## Results
-The model shows great accuracy : approximately 90% on images from the unseen data on MNIST testing dataset
-The model showcases good accuracy on real world imaages , taken on a camera, given that there is good lighting and relatively low noise on images.
+ - The model shows great accuracy : approximately **90%** on images from the unseen data on **MNIST** testing dataset
+ - The model showcases good accuracy on real world imaages , taken on a camera, given that there is good lighting and relatively low noise on images.
